@@ -5,13 +5,13 @@ a basic code editor made with React for HTML, CSS, JS
 ### For developers:
 - Make sure your machine has <a href="https://nodejs.org/en/">Node.JS</a>
 
-clone the repo.
+- clone the repo.
 `git clone https://github.com/Txreq/Angle-React-Code-Editor`
 
-install dependencies
+- install dependencies
 `npm install`
 
-start developement local server
+- start developement local server
 `npm start`
 
 Enjoy 🖤
