@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.box { 
+    width: 100%; 
+
+    .tabs {
+        background-color: #181A1F;
+        display: flex;
+        gap: 2px;
+
+        button {
+            display: inline;
+            padding: 0.5rem 1rem;
+            font-size: 16px;
+            background: #21252B;
+            color: #8B969E;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .selected { 
+            background-color: #282C34;
+        }
+    }
+}
+
+.left {
+    background-color: #282C34;
+}
+
+.editor {
+    height: calc(100% - 2.5rem);
+    overflow-y: scroll;
+    
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+      
+    &::-webkit-scrollbar-track {
+        background: transparent; 
+        border-left: 1px solid #404349;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #3B414D;
+    }
+}
+
+.right {
+    iframe {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}
+
+.fa-html5 { color: #eb7d34; }
+.fa-css3 { color: #27abcc; }
+.fa-js { color: #ffe600; }
+
+.cm-s-material.CodeMirror,
+.cm-s-material .CodeMirror-gutters {
+    background: transparent;
+    border: none;
+}
+.cm-s-material .CodeMirror-guttermarker, .cm-s-material .CodeMirror-guttermarker-subtle, .cm-s-material .CodeMirror-linenumber {
+    color: #636D83;
+    font-size: 14px;
+}
+
+.cm-s-material.CodeMirror {
+    color: #ABB2BF;
+    font-size: 14px;
+}
+
+.cm-selectionBackground { background: #3E4451; }
+.CodeMirror { height: 100%; }
